@@ -1,0 +1,98 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="../css/surveyStyle.css" type="text/css" />
+    <link rel="icon" href="../images/graceyCodeIcon.ico" type="image/x-icon" />
+</head>
+<body>
+    <h1 id= title>Survey Form</h1>
+    <p id=description>Please takes a few minutes to complete this survey form</p>
+
+    <div class="container">
+        <form id="survey-form">
+            <label id="name-label" for="name"> Name: </label>
+            <input type="text" id="name" class="input-text" placeholder="Input your name" required />
+            <label id="email-label" for="email">Email:  </label>
+            <input type="email" id="email" pattern="[a-zA-Z0-9]{1,15}[@]{1,1}[a-zA-Z0-9]{1,15}[.]{1,1}[a-zA-Z]{1,15}" placeholder="Input your email" class="input-text" required />
+
+            <label id="number-label" for="number">Age: </label>
+            <input type="number" id="number" min="18" max="100" placeholder="Select your age" class="input-text" />
+
+            <label for="dropdown"> Gender:</label>
+            <select id="dropdown" class="input-dropdown">
+                <option value=""> </option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <br />
+            <label> What's your programming level?</label>
+            <label for="newbie">
+                <input id="newbie"
+                       type="radio"
+                       name="items"
+                       value="newbie"
+                       class="input-radio" />Newbie
+            </label>
+            <label for="newbie">
+                <input id="intermediate"
+                       type="radio"
+                       name="items"
+                       value="intermediate"
+                       class="input-radio" />Intermediate
+            </label>
+            <label for="newbie">
+                <input id="professional"
+                       type="radio"
+                       name="items"
+                       value="professional"
+                       class="input-radio" />Professional
+            </label>
+            <br />
+            <label for="study-label">
+                What would you like to study?
+                <small> (Check all that apply)</small>
+            </label>
+            <label>
+                <input name="interest"
+                       type="checkbox"
+                       value="html" /> HTML
+            </label>
+            <label>
+                <input name="interest"
+                       type="checkbox"
+                       value="css" /> CSS
+            </label>
+            <label>
+                <input name="interest"
+                       type="checkbox"
+                       value="javascript" /> Javascript
+            </label>
+            <label>
+                <input name="interest"
+                       type="checkbox"
+                       value="photoshop" /> Photoshop
+            </label>
+            <label>
+                <input name="interest"
+                       type="checkbox"
+                       value="contentWriting" /> Content Writing
+            </label>
+            <label>
+                <input name="interest"
+                       type="checkbox"
+                       value="other" /> Others
+            </label>
+
+            <label for="describe-label">Describe more about yourself: </label>
+            <textarea id="describe-label" placeholder="Describe yourself" rows="4" cols="50" class="input-textarea"> </textarea>
+            <br />
+            <button type="submit" id="submit" form="survey-form" value="Submit">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+</html>

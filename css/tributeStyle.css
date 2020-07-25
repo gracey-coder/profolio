@@ -1,0 +1,60 @@
+body{
+  font-family: BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  color: #46494C;
+  text-align: center;
+  width: 100%;
+  margin:0;
+}
+p{
+  text-align:justify}
+
+hr{
+  width: 40%;
+  border: 0;
+  height: 1px;
+  background: #454545;
+  background-image: -webkit-linear-gradient(left, rgba(204, 204, 204, 0.9), rgba(51, 51, 51, 0.1), rgba(204, 204, 204, 0.9));
+  background-image: -moz-linear-gradient(left, rgba(204, 204, 204, 0.9), rgba(51, 51, 51, 0.1), rgba(204, 204, 204, 0.9));
+  background-image: -ms-linear-gradient(left, rgba(204, 204, 204, 0.9), rgba(51, 51, 51, 0.1), rgba(204, 204, 204, 0.9));
+  background-image: -o-linear-gradient(left, rgba(204, 204, 204, 0.9), rgba(51, 51, 51, 0.1), rgba(204, 204, 204, 0.9));
+}
+
+img{
+  display: block;
+  margin: auto;
+}
+
+#main {
+  background-color: #eee;
+  border-radius: 5px;
+}
+#title{
+  padding-top:30px;
+  margin:0px;
+}
+#title-quote{
+  height: auto;
+  font-style: italic;
+}
+#image{
+  width: auto;
+  max-width:100%;
+  max-height:500px;
+  border-radius: 50%;
+}
+#img-div{
+  justify-items:center;
+}
+
+#container{
+  display: grid;
+  width:95%;
+  margin: 30px;
+  padding: 10px 25px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 50px; 
+  background-color:#D3D3D3;
+  border-radius: 15px;
+}
+
+

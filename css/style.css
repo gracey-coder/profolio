@@ -1,0 +1,218 @@
+:root {
+    --main-green: #5cdb95;
+    --main-lightgreen: #8EE4AF;
+    --main-blue: #05386B;
+    --main-white: #EDf5E1;
+}
+
+body, header {
+    padding: 0;
+    margin: 0;
+    /*font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;*/
+    font-family: BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    color: var(--main-white);
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#welcome-section {
+    height: 40vh;
+    background-color: var(--main-blue);
+    text-align: center;
+}
+
+.main-title {
+    font-weight: normal;
+    font-size: 75px;
+    /*line-height: 1.4;*/
+    color: var(--main-lightgreen);
+    text-shadow: 1px 2px 1px var(--main-white);
+    margin: 0px 0px 15px 0px;
+    padding-top: 10vh;
+    width: 100%;
+}
+
+.main-paragraph {
+    font-family: 'Lucida Handwriting';
+    font-weight: 100;
+    font-size: 25px;
+    font-stretch: expanded;
+    text-shadow: 1px 1px 4px var(--main-blue);
+    margin-top: 0;
+    width: 100%;
+}
+
+header {
+    background-color: var(--main-blue);
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 10px;
+    padding-right: 100px;
+    margin-top: 10px;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+nav a {
+    font-size: large;
+    font-weight: bold;
+    color: #EDF5E1;
+    padding: 10px;
+}
+
+    nav a:hover {
+        color: var(--main-blue);
+        background-color: var(--main-green);
+    }
+
+#projects {
+    background-color: var(--main-lightgreen);
+    margin: 0;
+    padding-bottom: 30px;
+    height: auto;
+    width: 100%;
+}
+
+    #projects h1 {
+        color: var(--main-blue);
+        text-shadow: 2px 2px 1px var(--main-white);
+        margin: 0px auto;
+        padding-top: 50px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 0 auto;
+    padding: 40px 0;
+    grid-gap: 40px;
+    max-width: 1280px;
+}
+
+.project-tile {
+    display: block;
+    height: 350px;
+    background-color: dimgrey;
+    border: 0;
+}
+
+    .project-tile img {
+        height: calc(100% - 5.5rem);
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .project-tile p {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .project-tile:hover, .show-all:hover {
+        background-color: var(--main-blue);
+        font-weight: bold;
+    }
+
+.show-all {
+    display: block;
+    padding: 20px;
+    margin: 0 auto;
+    width: 200px;
+    background-color: dimgray;
+    font-size: 20px;
+    text-align: center;
+}
+
+#contact {
+    height: 60vh;
+    background-color: var(--main-blue);
+    text-align: center
+}
+
+    #contact h2 {
+        font-weight: 100;
+        font-family: 'Lucida Handwriting';
+        font-size: 54px;
+        line-height: 1.4;
+        text-shadow: 1px 1px 2px var(--main-lightgreen);
+        margin: 0;
+        padding-top: 10vh;
+        width: 100%;
+    }
+
+    #contact p {
+        font-family: Arial;
+        letter-spacing: 5px;
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+        text-shadow: 1px 1px 1px var(--main-lightgreen);
+    }
+
+#contact-list {
+    width: 80vw;
+    margin: 10vh auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+footer {
+    height: 3vh;
+    display: block;
+    background-color: var(--main-blue);
+    border-top: 1px solid rgba(255,255,255, 0.4);
+    padding: 10px;
+}
+
+
+@media (max-width: 800px) {
+
+    #projects h1 {
+        font-size: 35px;
+    }
+
+    .project-tile img {
+        height: calc(100% - 4.5rem);
+    }
+
+    #contact h2 {
+        font-size: 30px;
+    }
+
+    #contact-list {
+        flex-direction: column;
+        margin-top: 15px;
+        font-size: 25px;
+    }
+
+        #contact-list div {
+            padding-top: 10px;
+        }
+}
+
+

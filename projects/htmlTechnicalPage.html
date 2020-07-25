@@ -1,0 +1,514 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>HTML Technical Document Page</title>
+    <link href="../css/htmlStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <nav id="navbar">
+        <header>HTML & CSS Notes</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Doctypes">Doctypes</a></li>
+            <li><a class="nav-link" href="#Heading">Heading</a></li>
+            <li><a class="nav-link" href="#Paragraphs">Paragraphs</a></li>
+            <li><a class="nav-link" href="#Text_Formatting">Text Formatting</a></li>
+            <li><a class="nav-link" href="#Main_element">Main Element</a></li>
+            <li><a class="nav-link" href="#Make_an_element_scrollable">Make an Element Scrollable</a></li>
+            <li><a class="nav-link" href="#CSS_Viewport_Height">Viewport Height</a></li>
+            <li><a class="nav-link" href="#CSS_Viewport_Width">Viewport Width</a></li>
+            <li><a class="nav-link" href="#Display_Properties_-_Grid">Display Porperty - Grid</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <article>
+                <p>This is technical document about HTML</p>
+            </article>
+        </section>
+        <section id="Doctypes" class="main-section">
+            <header>Doctypes</header>
+            <article>
+                <p>
+                    &lt;!Doctype&gt;
+                    <ol>
+                        <li>Should declare before &lt;html&gt; tag</li>
+                        <li>Case insensitive</li>
+                    </ol>
+                </p>
+            </article>
+        </section>
+        <section id="Heading" class="main-section">
+            <header>Heading</header>
+            <article>
+                <p>
+                    <ol>
+                        <li>Provides 6 types header tag</li>
+                        <li>Search engines and other user agents usually index page content based on heading elements </li>
+                        <li>Correct structure for headings is important</li>
+                    </ol>
+                </p>
+            </article>
+        </section>
+        <section id="Paragraphs" class="main-section">
+            <header>Paragraphs</header>
+            <article>
+                <p>&lt;p&gt; will ignore extra space or extra line</p>
+                <table>
+                    <tr>
+                        <th>Tags</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>Defines a paragraphs</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td>New line</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;pre&gt;</td>
+                        <td>Defines pre-formatted text</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <section id="Text_Formatting" class="main-section">
+            <header>Text Formatting</header>
+            <article>
+                <h2>Highlighting</h2>
+                <p>
+                    <ol>
+                        <li>Use &lt;mark&gt;</li>
+                        <li>It will highlight the text in yellow, it can change in CSS</li>
+                        <li>
+                            Example:<br />
+                            <code>Here is some content from an article that contains the &lt;mark&gt;<mark> searched query </mark>&lt;/mark&gt;.</code>
+                        </li>
+                    </ol>
+                </p>
+            </article>
+            <article>
+                <h2>Bold, Italic, Underline</h2>
+                <p>
+                    <ol>
+                        <li>
+                            Bold Text: &lt;strong&gt; or &lt;b&gt; tag  <br />
+                            - &lt;strong&gt; indicates that the text is fundamentally or semantically important to the surrounding text.<br />
+                            - &lt;b&gt; ˗indicates no such importance and simply represents text that should be bold.
+                        </li>
+                        <li>
+                            Italicize text: &lt;em&gt; or &lt;i&gt; tag <br />
+                            - &lt;em&gt; indicate that the text should have extra emphasize or need to be stressed. <br />
+                            - &lt;i&gt; simply represents text which should be set off from the normal text around it.
+                        </li>
+                        <li>Underline: &lt;u&gt;</li>
+                    </ol>
+                </p>
+            </article>
+            <article>
+                <h2>Abbreviation </h2>
+                <p>
+                    Use &lt;abr&gt;, here's example: (mouse hover the word of HTML)<br />
+                    <code>I like to write &lt;abr title="Hypertext Markup Language"&gt;<abr title="Hypertext Markup Language">HTML</abr>&lt;/abr&gt;!</code>
+                </p>
+                <h2>Inserted, Deleted, Stricken</h2>
+                <p>
+                    Mark text as inserted: &lt;ins&gt; tag <br />
+                    Mark text as deleted: &lt;del&gt; tag <br />
+                    Strike through text: &lt;s&gt; tag<br />
+                    Example: <br />
+
+                    <code>
+                        &lt;ins&gt;<ins>inserted text</ins>&lt;/ins&gt;
+                        &lt;del&gt;<del>deleted text</del>&lt;/del&gt;
+                        &lt;s&gt;<s>struck through text</s>&lt;/s&gt;
+                    </code>
+
+                </p>
+            </article>
+            <article>
+                <h2>Superscript and Subscript</h2>
+                <p>
+                    Offset text upward: &lt;sup&gt;<br />
+                    Offset text downward: &lt;sub&gt; <br />
+                    <code> &lt;sup&gt;<sup>superscript</sup>&lt;/sup&gt;</code>
+                </p>
+            </article>
+        </section>
+        <section id="Main_element" class="main-section">
+            <header>Main element</header>
+            <article>
+                <p>
+                    <ol>
+                        <li>The content inside the &lt;main&gt; element in a document should be unique </li>
+                        <li>It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search form</li>
+                    </ol>
+                    Here's example:<br />
+                    <code>
+                        &lt;main&gt;
+                        &lt;h1&gt;Most Popular Browsers &lt;/h1&gt;
+                        &lt;p&gt;Chrome, Firefox, and Edge are the most used browsers today.&lt;/p&gt;
+
+                        &lt;article&gt;
+                        &lt;h2&gt;Google Chrome &lt;/h2&gt;
+                        &lt;p&gt;Google Chrome is a web browser developed by Google, released in 2008.
+                        Chrome is the world's most popular web browser today!&lt;/p&gt;
+                        &lt;/article&gt;
+
+                        &lt;article&gt;
+                        &lt;h2&gt;Mozilla Firefox&lt;/h2&gt;
+                        &lt;p&gt;Mozilla Firefox is an open-source web browser developed by Mozilla.
+                        Firefox has been the second most popular web browser since January, 2018.&lt;/p&gt;
+                        &lt;/article&gt;
+
+                        &lt;article&gt;
+                        &lt;h2&gt;Microsoft Edge&lt;/h2&gt;
+                        &lt;p&gt;Microsoft Edge is a web browser developed by Microsoft, released in 2015.
+                        Microsoft Edge replaced Internet Explorer.&lt;/p&gt;
+                        &lt;/article&gt;
+                        &lt;/main&gt;
+                    </code>
+                </p>
+            </article>
+        </section>
+        <section id="Make_an_element_scrollable" class="main-section">
+            <header>Make an element scrollable</header>
+            <article>
+                <p>
+                    In CSS. use &lt;overflow-x&gt;, &lt;overflow-y&gt; or &lt;overflow&gt; to define it<br />
+                    Here's example: <br />
+                    <code>
+                        #div{
+                        overflow-y: auto;
+                        overflow-x: hidden;
+                        }
+                    </code>
+                </p>
+            </article>
+        </section>
+        <section id="CSS_Viewport_Height" class="main-section">
+            <header>CSS - Viewport Height(vh)</header>
+            <article>
+                <p>
+                    This unit is based on the <u>height of viewport</u>.<br>
+                    A value of 1vh = 1% of the viewport height
+                </p>
+            </article>
+        </section>
+        <section id="CSS_Viewport_Width" class="main-section">
+            <header>CSS - Viewport Width(vw)</header>
+            <article>
+                <p>
+                    This unit is based on the <u>width of viewport</u>.<br>
+                    A value of 1vw = 1% of the viewport width
+                </p>
+            </article>
+        </section>
+        <section id="Display_Properties_-_Grid" class="main-section">
+            <header>Display Properties - Grid</header>
+            <article>
+                <p>
+                    After define code below in CSS
+                    <code>display: grid;</code>
+                    Here's the grid properties can be used:
+                    <ol>
+                        <li>
+                            <strong>grid-template-columns</strong>: define how many columns inside a gride, <br>
+                            You can also define each column width<br>
+                            <a href="#grid-example-1">See example 1</a>
+                        </li>
+                        <li>
+                            <strong>grid-template-rows</strong>: define how many <strong>rows</strong> inside a gride, <br>
+                            You can also define each column width<br>
+                            <a href="#grid-example-2">See example 2</a>
+                        </li>
+                        <li>
+                            You can use value <strong>repeat()</strong> for both grid-template-columns and grid-template-rows<br>
+                            <a href="#grid-example-3">See example 3</a>
+                        </li>
+                        <li>
+                            When using repeat() value: <br>
+                            - For column/row number, instead of direct define with number , you can use <strong>auto-fit or auto-fill</strong> <br>
+                            - For column width / row height, instead of direct define with number, you can use <strong>minmax(min no, max no)</strong> <br>
+                            You may use this to create <strong>responsive website</strong>. <br>
+                            <a href="#grid-example-4">See example 4</a>
+                        </li>
+                        <li>
+                            <strong>grid-column-gap / grid-row-gap</strong>: set the gap between columns/rows<br>
+                            or you can use <strong>grid-gap: column-width row-width</strong> <br>
+                            <a href="#grid-example-5">See example 5</a>
+                        </li>
+                        <li>
+                            You can use <strong>grid-template-area</strong> to define columns and rows like a table in upper level div <br>
+                            In each child div, remember define <strong>grid-area</strong><br>
+                            <a href="#grid-example-6">See example 6</a>
+                        </li>
+                    </ol>
+                </p>
+                <p id="grid-example-1">
+                    <mark>Example 1: Define 3 columns, each width is 60px</mark>
+                    <code>
+                        &lt;style type="text/css"&gt;
+                        .grid{	display:grid;
+                        grid-template-columns: 60px 60px 60px;
+                        }
+                        .tile{ 	height: 30px;
+                        color: #5CDB95;
+                        background-color: #05386B;
+                        }
+                        &lt;/script&gt;
+
+                        &lt;div class="grid"&gt;
+                        &lt;div class="tile"&gt;1&lt;/div&gt;
+                        &lt;div class="tile"&gt;2&lt;/div&gt;
+                        &lt;div class="tile"&gt;3&lt;/div&gt;
+                        &lt;div class="tile"&gt;4&lt;/div&gt;
+                        &lt;div class="tile"&gt;5&lt;/div&gt;
+                        &lt;/div&gt;
+                    </code>
+
+                    <style type="text/css">
+                        .grid {
+                            display: grid;
+                            grid-template-columns: 60px 60px 60px;
+                        }
+
+                        .tile {
+                            height: 30px;
+                            color: #5CDB95;
+                            background-color: #05386B;
+                            border: 1px solid white;
+                        }
+                    </style>
+
+                    <div class="grid">
+                        <div class="tile">1</div>
+                        <div class="tile">2</div>
+                        <div class="tile">3</div>
+                        <div class="tile">4</div>
+                        <div class="tile">5</div>
+                    </div>
+                </p>
+                <p id="grid-example-2">
+                    <mark>Example 2: Define 2 columns and 2 rows, each width and height is 60px</mark>
+                    <code>
+                        &lt;style type="text/css"&gt;
+                        .grid-2{	display:grid;
+                        grid-template-columns: 60px 60px;
+                        grid-template-rows: 60px 60px;
+                        }
+                        &lt;/script&gt;
+
+                        &lt;div class="grid-2"&gt;
+                        &lt;div class="tile-2"&gt;1&lt;/div&gt;
+                        &lt;div class="tile-2"&gt;2&lt;/div&gt;
+                        &lt;div class="tile-2"&gt;3&lt;/div&gt;
+                        &lt;/div&gt;
+                    </code>
+
+                    <style type="text/css">
+                        .grid-2 {
+                            display: grid;
+                            grid-template-columns: 60px 60px;
+                            grid-template-rows: 60px 60px;
+                        }
+                    </style>
+
+                    <div class="grid-2">
+                        <div class="tile">1</div>
+                        <div class="tile">2</div>
+                        <div class="tile">3</div>
+                    </div>
+                </p>
+                <p id="grid-example-3">
+                    <mark>Example 3: Use repeat value to define 4 columns with width 50px</mark>
+                    <code>
+                        &lt;style type="text/css"&gt;
+                        .grid-3{	display:grid;
+                        grid-template-columns: repeat(4, 50px);
+                        }
+                        &lt;/script&gt;
+
+                        &lt;div class="grid-2"&gt;
+                        &lt;div class="tile"&gt;1&lt;/div&gt;
+                        &lt;div class="tile"&gt;2&lt;/div&gt;
+                        &lt;div class="tile"&gt;3&lt;/div&gt;
+                        ...
+                        &lt;div class="tile"&gt;8&lt;/div&gt;
+                        &lt;/div&gt;
+                    </code>
+
+                    <style type="text/css">
+                        .grid-3 {
+                            display: grid;
+                            grid-template-columns: repeat(4, 50px);
+                        }
+                    </style>
+
+                    <div class="grid-3">
+                        <div class="tile">1</div>
+                        <div class="tile">2</div>
+                        <div class="tile">3</div>
+                        <div class="tile">4</div>
+                        <div class="tile">5</div>
+                        <div class="tile">6</div>
+                        <div class="tile">7</div>
+                        <div class="tile">8</div>
+                    </div>
+                </p>
+                <p id="grid-example-4">
+                    <mark>Example 4: Use repeat value with value auto-fit/auto-fill and minmax() to create responsive website</mark><br>
+                    Try to change browser size to see the effect.
+                    <code>
+                        &lt;style type="text/css"&gt;
+                        .grid-auto-fit{	display:grid;
+                        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+                        }
+                        grid-auto-fill{	display:grid;
+                        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+                        }
+                        &lt;/script&gt;
+
+                        &lt;div class="grid-auto-fit"&gt;
+                        &lt;div class="tile"&gt;1&lt;/div&gt;
+                        &lt;div class="tile"&gt;2&lt;/div&gt;
+                        &lt;div class="tile"&gt;3&lt;/div&gt;
+                        &lt;div class="tile"&gt;4&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="grid-auto-fill"&gt;
+                        &lt;div class="tile"&gt;1&lt;/div&gt;
+                        &lt;div class="tile"&gt;2&lt;/div&gt;
+                        &lt;div class="tile"&gt;3&lt;/div&gt;
+                        &lt;div class="tile"&gt;4&lt;/div&gt;
+                        &lt;/div&gt;
+                    </code>
+
+                    <style type="text/css">
+                        .grid-auto-fit {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+                        }
+
+                        .grid-auto-fill {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+                        }
+
+                        h4 {
+                            margin-bottom: 0;
+                        }
+                    </style>
+
+                    <h4>Auto-fit:</h4>
+                    <div class="grid-auto-fit">
+                        <div class="tile">1</div>
+                        <div class="tile">2</div>
+                        <div class="tile">3</div>
+                        <div class="tile">4</div>
+                    </div>
+                    <h4>Auto-fill:</h4>
+                    <div class="grid-auto-fill">
+                        <div class="tile">1</div>
+                        <div class="tile">2</div>
+                        <div class="tile">3</div>
+                        <div class="tile">4</div>
+                    </div>
+                </p>
+                <p id="grid-example-5">
+                    <mark>Example 5: Set the gap between columns and rows to 5px and 20px</mark><br>
+                    Try to change browser size to see the effect.
+                    <code>
+                        &lt;style type="text/css"&gt;
+                        .grid-gap{	display:grid;
+                        grid-template-columns: repeat(2, 50px);
+                        grid-gap: 5px 20px;
+                        }
+                        &lt;/script&gt;
+
+                        &lt;div class="grid-auto-fit"&gt;
+                        &lt;div class="tile"&gt;1&lt;/div&gt;
+                        &lt;div class="tile"&gt;2&lt;/div&gt;
+                        &lt;div class="tile"&gt;3&lt;/div&gt;
+                        &lt;div class="tile"&gt;4&lt;/div&gt;
+                        &lt;/div&gt;
+                    </code>
+
+                    <style type="text/css">
+                        .grid-gap {
+                            display: grid;
+                            grid-template-columns: repeat(2, 50px);
+                            grid-gap: 5px 20px;
+                        }
+                    </style>
+
+                    <div class="grid-gap">
+                        <div class="tile">1</div>
+                        <div class="tile">2</div>
+                        <div class="tile">3</div>
+                        <div class="tile">4</div>
+                    </div>
+                </p>
+                <p id="grid-example-6">
+                    <mark>Example 6: Use grid-template-area in parent div and grid-area in child div</mark><br>
+                    You also can use grid-template-rows, grid-template-columns, and grid-gap at the same time.
+                    <code>
+                        &lt;style type="text/css"&gt;
+                        .grid-parent{	display:grid;
+                        grid-template-areas:
+                        "header header header"
+                        "section section nav"
+                        "footer footer footer";
+                        }
+                        .item4{ grid-area: section; }
+                        .item5{ grid-area: nav; }
+                        .item6{ grid-area: footer; }
+                        &lt;/script&gt;
+
+                        &lt;div class="grid-parent"&gt;
+                        &lt;div class="tile"&gt;1&lt;/div&gt;
+                        &lt;div class="tile"&gt;2&lt;/div&gt;
+                        &lt;div class="tile"&gt;3&lt;/div&gt;
+                        &lt;div class="tile item4"&gt;4&lt;/div&gt;
+                        &lt;div class="tile item5"&gt;5&lt;/div&gt;
+                        &lt;div class="tile item6"&gt;6&lt;/div&gt;
+                        &lt;/div&gt;
+                    </code>
+
+                    <style type="text/css">
+                        .grid-parent {
+                            display: grid;
+                            grid-template-areas: "header header vs" "section section nav" "footer footer footer";
+                        }
+
+                        .item4 {
+                            grid-area: section;
+                        }
+
+                        .item5 {
+                            grid-area: nav;
+                        }
+
+                        .item6 {
+                            grid-area: footer;
+                        }
+                    </style>
+
+                    <div class="grid-parent">
+                        <div class="tile">1</div>
+                        <div class="tile">2</div>
+                        <div class="tile">3</div>
+                        <div class="tile item4">4</div>
+                        <div class="tile item5">5</div>
+                        <div class="tile item6">6</div>
+                    </div>
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
