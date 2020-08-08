@@ -124,8 +124,9 @@
                 });
                 // Style Figure
                 self.all.find('figure').css({
-                    width : '90%',
-                    height : '100%'
+                    width : '100%',
+                    height : '100%',
+                    margin : '0px auto'
                 });
                 //Style Images
                 self.all.find('img').css({
